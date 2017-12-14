@@ -2,8 +2,40 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## 2017-12-06 Original project forked
-https://github.com/go-gomail/gomail/issues/104
+## [2.1.0] - 2017-12-14
+
+### Added
+
+- go-gomail#40: Adds `Dialer.LocalName` field to allow specifying the hostname
+  sent with SMTP's HELO command.
+- go-gomail#47: `Message.SetBody`, `Message.AddAlternative`, and
+  `Message.AddAlternativeWriter` allow specifying the encoding of message parts.
+- `Dialer.Dial`'s returned `SendCloser` automatically redials after a timeout.
+- go-gomail#55, go-gomail#56: Adds `Rename` to allow specifying filename
+  of an attachment.
+- go-gomail#100: Exports `NetDialTimeout` to allow setting a custom dialer.
+- go-gomail#70: Adds `Dialer.Timeout` field to allow specifying a timeout for
+  dials, reads, and writes.
+
+### Changed
+
+- go-gomail#52: `Dialer.Dial` automatically uses CRAM-MD5 when available.
+- `Dialer.Dial` specifies a default timeout of 10 seconds.
+- Gomail is forked from <https://github.com/go-gomail/gomail/> to
+  <https://github.com/go-mail/mail/>.
+
+### Deprecated
+
+- go-gomail#52: `NewPlainDialer` is deprecated in favor of `NewDialer`.
+
+### Fixed
+
+- go-gomail#41, go-gomail#42: Fixes a panic when a `Message` contains a
+  nil header.
+- go-gomail#44: Fixes `AddAlternativeWriter` replacing the message body instead
+  of adding a body part.
+- go-gomail#53: Folds long header lines for RFC 2047 compliance.
+- go-gomail#54: Fixes `Message.FormatAddress` when name is blank.
 
 ## [2.0.0] - 2015-09-02
 
