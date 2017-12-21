@@ -48,8 +48,21 @@ https://godoc.org/github.com/go-mail/mail
 
 ## Download
 
-    go get gopkg.in/mail.v2
+If you're already using a dependency manager, like [dep][dep], use the following
+import path:
 
+```
+github.com/go-mail/mail
+```
+
+If you *aren't* using vendoring, `go get` the [Gopkg.in](http://gopkg.in)
+import path:
+
+```
+gopkg.in/mail.v2
+```
+
+[dep]: https://github.com/golang/dep#readme
 
 ## Examples
 
