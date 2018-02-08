@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.3.0] - *Unreleased*
+
+### Added
+
+- #12: Adds `SendError` to provide additional info about the cause and index of
+  a failed attempt to transmit a batch of messages.
+
 ## [2.2.0] - 2018-03-01
 
 ### Added
