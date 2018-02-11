@@ -18,6 +18,7 @@ type Message struct {
 	encoding    Encoding
 	hEncoder    mimeEncoder
 	buf         bytes.Buffer
+	boundary    string
 }
 
 type header map[string][]string
@@ -96,6 +97,11 @@ const (
 	// will still be encoded using quoted-printable encoding.
 	Unencoded Encoding = "8bit"
 )
+
+// SetBoundary sets a custom multipart boundary.
+func (m *Message) SetBoundary(boundary string) {
+	m.boundary = boundary
+}
 
 // SetHeader sets a value to the given header field.
 func (m *Message) SetHeader(field string, value ...string) {
