@@ -19,3 +19,7 @@ branches:
 
 notifications:
   email: false
+
+before_install:
+  - mkdir -p $GOPATH/src/gopkg.in &&
+    ln -s ../github.com/go-mail/mail $GOPATH/src/gopkg.in/mail.v2
