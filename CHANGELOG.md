@@ -7,6 +7,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 
 - #20: Adds `Message.SetBoundary` to allow specifying a custom MIME boundary.
+- #22: Adds `Message.SetBodyWriter` to make it easy to use text/template and
+  html/template for message bodies. Contributed by Quantcast.
 
 ## [2.1.0] - 2017-12-14
 
