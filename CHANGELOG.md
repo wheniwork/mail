@@ -9,6 +9,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - #12: Adds `SendError` to provide additional info about the cause and index of
   a failed attempt to transmit a batch of messages.
 
+### Fixed
+
+- #26: Fixes RFC 1341 compliance by properly capitalizing the
+  `MIME-Version` header.
+
 ## [2.2.0] - 2018-03-01
 
 ### Added
