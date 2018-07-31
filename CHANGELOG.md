@@ -13,6 +13,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - #26: Fixes RFC 1341 compliance by properly capitalizing the
   `MIME-Version` header.
+- #30: Fixes IO errors being silently dropped in `Message.WriteTo`.
 
 ## [2.2.0] - 2018-03-01
 
