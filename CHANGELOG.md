@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
   a failed attempt to transmit a batch of messages.
 - go-gomail#78: Adds new `Message` methods for attaching and embedding
   `io.Reader`s: `AttachReader` and `EmbedReader`.
+- #39: Adds support for Go modules (Go 1.11+).
 
 ### Fixed
 
