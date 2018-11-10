@@ -8,6 +8,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - #12: Adds `SendError` to provide additional info about the cause and index of
   a failed attempt to transmit a batch of messages.
+- go-gomail#78: Adds new `Message` methods for attaching and embedding
+  `io.Reader`s: `AttachReader` and `EmbedReader`.
 
 ### Fixed
 
