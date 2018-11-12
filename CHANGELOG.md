@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## *Unreleased*
 
+## [2.3.1] - 2018-11-12
+
 ### Fixed
 
 - #39: Reverts addition of Go modules `go.mod` manifest.
