@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## *Unreleased*
 
+### Fixed
+
+- #39: Reverts addition of Go modules `go.mod` manifest.
+
 ## [2.3.0] - 2018-11-10
 
 ### Added
@@ -12,7 +16,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
   a failed attempt to transmit a batch of messages.
 - go-gomail#78: Adds new `Message` methods for attaching and embedding
   `io.Reader`s: `AttachReader` and `EmbedReader`.
-- #39: Adds support for Go modules (Go 1.11+).
 
 ### Fixed
 
